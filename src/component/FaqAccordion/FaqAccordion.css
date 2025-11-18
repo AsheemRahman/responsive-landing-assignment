@@ -1,0 +1,136 @@
+.faq-container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 60px auto;
+    font-family: "Inter", sans-serif;
+    color: #12406F;
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-weight: 600;
+    color: #12406F;
+}
+
+.faq-item {
+    border-bottom: 1px solid #d8dee9;
+    padding: 25px 0;
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background: none;
+    border: none;
+    padding: 0;
+    color: #525252;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: left;
+}
+
+.faq-icon {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #9ea5b3;
+    border-radius: 50%;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1e2a3b;
+    transition: background 0.2s, color 0.2s;
+}
+
+.faq-icon.open {
+    background: #0a4a8a;
+    color: white;
+    border-color: #0a4a8a;
+}
+
+.faq-answer {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #4b5563;
+    line-height: 1.6;
+    width: 90%;
+}
+
+@media (max-width: 992px) {
+    .faq-container {
+        width: 90%;
+    }
+
+    .faq-title {
+        font-size: 34px;
+        margin-bottom: 40px;
+    }
+
+    .faq-question {
+        font-size: 18px;
+    }
+
+    .faq-answer {
+        font-size: 16px;
+        width: 95%;
+    }
+}
+
+@media (max-width: 600px) {
+    .faq-container {
+        width: 92%;
+        margin: 40px auto;
+    }
+
+    .faq-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .faq-item {
+        padding: 18px 0;
+    }
+
+    .faq-question {
+        font-size: 16px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .faq-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+
+    .faq-answer {
+        font-size: 15px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .faq-title {
+        font-size: 24px;
+    }
+
+    .faq-question {
+        font-size: 15px;
+    }
+
+    .faq-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 18px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
+}

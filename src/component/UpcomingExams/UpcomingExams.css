@@ -1,0 +1,144 @@
+.upcoming-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    padding: 40px 75px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.upcoming-left {
+    min-width: 220px;
+}
+
+.upcoming-title {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #12406F;
+    font-weight: 700;
+}
+
+.upcoming-sub {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #7a8ba3;
+}
+
+.upcoming-divider {
+    width: 1px;
+    min-height: 80px;
+    background-color: #e0e4ec;
+}
+
+.upcoming-items {
+    display: flex;
+    gap: 150px;
+    flex-wrap: wrap;
+}
+
+.upcoming-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    min-width: 200px;
+}
+
+.upcoming-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    border: 2px solid #1f4a7b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upcoming-icon-inner {
+    font-size: 18px;
+    color: #1f4a7b;
+}
+
+.upcoming-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.upcoming-date {
+    margin: 0 0 4px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1f4a7b;
+}
+
+.upcoming-level {
+    margin: 0;
+    font-size: 13px;
+    color: #4c5c78;
+}
+
+.upcoming-desc {
+    margin: 0;
+    font-size: 12px;
+    color: #7a8ba3;
+}
+
+@media (max-width: 992px) {
+    .upcoming-wrapper {
+        padding: 30px 40px;
+        gap: 30px;
+    }
+
+    .upcoming-items {
+        gap: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .upcoming-wrapper {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .upcoming-divider {
+        display: none;
+    }
+
+    .upcoming-items {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .upcoming-title {
+        font-size: 20px;
+    }
+
+    .upcoming-sub {
+        font-size: 11px;
+    }
+
+    .upcoming-items {
+        gap: 18px;
+    }
+
+    .upcoming-item {
+        gap: 10px;
+    }
+
+    .upcoming-date {
+        font-size: 13px;
+    }
+
+    .upcoming-level {
+        font-size: 12px;
+    }
+
+    .upcoming-desc {
+        font-size: 11px;
+    }
+}

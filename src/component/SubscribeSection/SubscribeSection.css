@@ -1,0 +1,145 @@
+.subscribe-wrapper {
+    display: flex;
+    align-items: start;
+    padding: 0 80px;
+    width: 100%;
+    background: #ffffff;
+    box-sizing: border-box;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.subscribe-left {
+    max-width: 550px;
+    flex: 1;
+}
+
+.subscribe-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0a3d62;
+    margin-bottom: 12px;
+}
+
+.subscribe-text {
+    font-size: 15px;
+    color: #525252;
+    margin-bottom: 20px;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.subscribe-input {
+    flex: 1;
+    min-width: 280px;
+    max-width: 450px;
+    padding: 14px 18px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    outline: none;
+}
+
+.subscribe-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    background: #12406F;
+    color: #fff;
+    border-radius: 8px;
+    padding: 14px 24px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    white-space: nowrap;
+}
+
+.subscribe-btn:hover {
+    background: #062a44;
+}
+
+.subscribe-right img {
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+}
+
+@media (max-width: 1200px) {
+    .subscribe-wrapper {
+        padding: 0 60px;
+    }
+
+    .subscribe-right img {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 992px) {
+    .subscribe-wrapper {
+        padding: 40px 40px;
+        gap: 30px;
+    }
+
+    .subscribe-right img {
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 768px) {
+    .subscribe-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 30px;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .subscribe-input {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .subscribe-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .subscribe-right img {
+        max-width: 360px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .subscribe-wrapper {
+        padding: 30px 20px;
+    }
+
+    .subscribe-title {
+        font-size: 26px;
+    }
+
+    .subscribe-text {
+        font-size: 14px;
+    }
+
+    .subscribe-right img {
+        max-width: 260px;
+    }
+}
+
+@media (max-width: 380px) {
+    .subscribe-right img {
+        max-width: 200px;
+    }
+}
